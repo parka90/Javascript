@@ -1,3 +1,4 @@
+"use strict"; // Correr JS en modo estricto
 // Objetos
 
 const producto = {
@@ -6,6 +7,12 @@ const producto = {
     disponible: true
 }
 
-producto.imagen = 'imagen.jpg'
+Object.freeze(producto); // no te permite agregar propiedades ni modificar
+
+producto.imagen = 'imagen.jpg';
+
+console.log(Object.isFrozen(producto));
 
 console.log(producto);
+
+Object.seal(producto); // no te permite agregar o sacar Propiedades pero si te permite modificar 

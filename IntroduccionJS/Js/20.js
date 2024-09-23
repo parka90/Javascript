@@ -26,3 +26,4 @@ reproductor.borrarCancion(20);
 reproductor.crearPlaylist('Heavy Metal');
 reproductor.reproducirPlaylist('Heavy Metal')
 //console.log(reproductor)
+

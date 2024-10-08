@@ -13,6 +13,8 @@ boton.addEventListener('click', function() {
 
 if(Notification.permission == 'granted') {
     new Notification('Esta es una notificacion', {
-        icon: 'img/ccj.png',
+        icon: 'img/im1.png',
+        body: 'Mira esta noti',
+    
     })
 }
